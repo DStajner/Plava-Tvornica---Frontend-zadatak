@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div id="container">
+            <img class="slides"  src="slider-image-7.jpg"/>
+            <img class="slides"  src="slider-image-6.jpg">
+            <img class="slides" src="slider-image-9.jpg">
+            <img class="slides" src="slider-image-8.jpg">
+            <img class="slides" src="slider-image-5.jpg">
+            
+            <button>>
+                
+            </button>
+            
+            <script>
+             var index=1;
+             function plusIndex(n)= {
+                 index= index + n;
+                 showImage(index);
+                 
+             }
+             showImage=(1);
+             function showImage(n) {
+                 var i;
+                 var x= document.getElementsByClassName ("slides");
+                 if(n>x.length){index=1};
+                 if(n<1){index=x.length};
+                 for(i=0;i<x.length;i++) {
+                     x[i].style.display="none";
+                     
+                 }
+                 x[index-1].style.display="block";
+             }
+             autoSlide();
+             function autoSlide(){
+                 alert˙("hi")
+                 setTimeout(autoslide,2000);
+             }
+</script>
+<br/>
+            <img class="slides"  src="slider-image-4.jpg"/>
+            <img class="slides"  src="slider-image-1.jpg"/>
+            <img class="slides"  src="slider-image-2.jpg"/>
+            <img class="slides"  src="slider-image-3.jpg"/>
+            
+        
+
+            
+        </div>
+    </body>
+</html>
